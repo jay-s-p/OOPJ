@@ -11,6 +11,12 @@
 0. [Hello World](HelloWorld.java)
 1. [For-Each loop](ForEachLoop/OneDimensionalArray.java)
 2. [Scanner example](Scanner/ComplexAddition.java)
+3. Inner Class/interface
+    - [Class Inner Class](Inner/Class-Class/Outer.java)
+    - [Class Inner Interface](Inner/Class-Interface/Outer.java)
+    - [Interface Inner Interface](Inner/Interface-Interface/Outer.java)
+    - [Class Inner Static Class](Inner/Outer.java)
+4. [Package](Package/Test.java)
 
 
 ---
