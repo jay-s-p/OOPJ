@@ -10,16 +10,17 @@
 ### 🧑‍💻Programs ...
 0. [Hello World](HelloWorld.java)
 1. [For-Each loop](ForEachLoop/OneDimensionalArray.java)
-2. [Scanner example](Scanner/ComplexAddition.java)
-3. Inner Class/interface
+2. [Command-line Argument](ForEachLoop/CommandLineArgs/Main.java)
+3. [Scanner example](Scanner/ComplexAddition.java)
+4. Inner Class/interface
     - [Class Inner Class](Inner/Class-Class/Outer.java)
     - [Class Inner Interface](Inner/Class-Interface/Outer.java)
     - [Interface Inner Interface](Inner/Interface-Interface/Outer.java)
-    - [Class Inner Static Class](Inner/Outer.java)
-4. [Package](Package/Test.java)
+5. [Package](Package/Test.java)
 
 
 ---
 
-###### _if you find any errors in code, you can contact me..._
-[![Contact](https://img.shields.io/badge/WA-97234%2030561-lightgrey?style=for-the-badge&logo=whatsapp)](https://api.whatsapp.com/send?phone=919723430561&text=Hi)
+###### _if you find any errors in code, you can contact me here..._
+[![Contact](https://img.shields.io/badge/chat-2d2f2e?style=for-the-badge&logo=whatsapp)](https://api.whatsapp.com/send?phone=919723430561&text=Hi)
+[![Contact](https://img.shields.io/badge/Instagram-2d2f2e?style=for-the-badge&logo=instagram)](https://instagram.com/jay__s__p)
