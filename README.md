@@ -11,16 +11,20 @@
 0. [Hello World](HelloWorld.java)
 1. [For-Each loop](ForEachLoop/OneDimensionalArray.java)
 2. [Command-line Argument](ForEachLoop/CommandLineArgs/Main.java)
-3. [Scanner example](Scanner/ComplexAddition.java)
+3. [Scanner example](Scanner/Main.java)
 4. Final keyword
     - [Final Variable](Final/Final-Variable/Main.java)
     - [Final Method](Final/Final-Method/Main.java)
     - [Final Class](Final/Final-Class/Main.java)
-5. Inner Class/Interface
+5. Super keyword
+    - [Super Variable](Super/Super-Variable/Main.java)
+    - [Super Method](Super/Super-Method/Main.java)
+    - [Super Constructor](Super/Super-Variable/Main.java)
+6. Inner Class/Interface
     - [Class Inner Class](Inner/Class-Class/Outer.java)
     - [Class Inner Interface](Inner/Class-Interface/Outer.java)
     - [Interface Inner Interface](Inner/Interface-Interface/Outer.java)
-6. [Package](Package/)
+7. [Package](Package/)
 
 
 ---
