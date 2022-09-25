@@ -18,6 +18,6 @@ class Demo {
     }
 
     public static void main(String[] args) {
-        Demo a = new Demo("ABC", 99);
+        Demo a = new Demo("LOL", 143);
     }
 }
