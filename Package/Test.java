@@ -1,11 +1,11 @@
 package com.company.project.module;
+
 public class Test {
-    void m()
-    {
+    void m() {
         System.out.println("Test");
     }
-    public void Zzz()
-    {
+
+    public void Zzz() {
         System.out.println("Zzz");
     }
 }
