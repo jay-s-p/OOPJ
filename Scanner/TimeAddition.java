@@ -3,16 +3,15 @@ import java.util.Scanner;
 class Time {
 
 	int sec, min, hour;
+	Scanner sc = new Scanner(System.in);
 
 	void getData() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the hour:");
+		System.out.print("Enter the hour    : ");
 		hour = sc.nextInt();
-		System.out.println("Enter the minute:");
+		System.out.print("Enter the minute  : ");
 		min = sc.nextInt();
-		System.out.println("Enter the second :");
+		System.out.print("Enter the second  : ");
 		sec = sc.nextInt();
-		sc.close();
 	}
 
 	void printData() {
@@ -44,12 +43,11 @@ class TimeAddition {
 	public static void main(String[] args) {
 		Time t1 = new Time();
 		Time t2 = new Time();
-		Time t3 = new Time();
 		Time Sum = new Time();
 
 		t1.getData();
 		t2.getData();
-		Sum = t3.sum(t1, t2);
+		Sum = t1.sum(t1, t2);
 		Sum.printData();
 	}
 
