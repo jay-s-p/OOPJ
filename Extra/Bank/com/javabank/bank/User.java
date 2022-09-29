@@ -12,13 +12,13 @@ public class User implements Serializable {
     private ArrayList<Integer> userAccounts = new ArrayList<>();
     private static final Database db = new Database();
 
-    public User(String name, String username, String password) throws DatabaseError {
+    public User(String name, String username, String password) throws DatabaseException {
         this.name = name;
         this.username = username;
         this.password = password;
     }
 
-    public Account createAccount(long amount, String type) throws DatabaseError, IllegalArgumentException {
+    public Account createAccount(long amount, String type) throws DatabaseException, IllegalArgumentException {
         int accNo = Math.abs(new Random().nextInt());
         Account acc = new Account(amount, type, accNo);
         userAccounts.add(accNo);

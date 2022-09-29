@@ -32,7 +32,7 @@ public class Database {
         return true;
     }
 
-    protected void updateAccount(Account acc) throws DatabaseError {
+    protected void updateAccount(Account acc) throws DatabaseException {
         int acc_no = acc.getAccountNumber();
 
         for (int i = 0; i < accounts.size(); i++) {
@@ -46,7 +46,7 @@ public class Database {
             out.writeObject(accounts);
             out.close();
         } catch (Exception e) {
-            throw new DatabaseError("Failed to update Account");
+            throw new DatabaseException("Failed to update Account");
         }
     }
 
@@ -68,7 +68,7 @@ public class Database {
         return null;
     }
 
-    public void addData(User user, Account acc) throws DatabaseError {
+    public void addData(User user, Account acc) throws DatabaseException {
         users.add(user);
         if (acc != null)
             accounts.add(acc);
@@ -83,7 +83,7 @@ public class Database {
             out.writeObject(accounts);
             out.close();
         } catch (Exception e) {
-            throw new DatabaseError("Failed to update Account ");
+            throw new DatabaseException("Failed to update Account ");
         }
     }
 }

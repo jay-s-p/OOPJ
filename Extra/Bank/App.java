@@ -9,7 +9,6 @@
  * https://replit.com/@jaysp303/Online-Bank-System
  * 
  * 
- *   ⬇️⬇️ Start writing from here ⬇️⬇️
  ***************************************************************/
 
 import java.util.Scanner;
@@ -18,7 +17,7 @@ import com.javabank.bank.User;
 import com.javabank.bank.Account;
 import com.javabank.bank.Captcha;
 import com.javabank.bank.Database;
-import com.javabank.bank.DatabaseError;
+import com.javabank.bank.DatabaseException;
 
 public class App {
 
@@ -131,7 +130,7 @@ public class App {
                 db.addData(user, null);
                 return true;
             }
-        } catch (DatabaseError e) {
+        } catch (DatabaseException e) {
             clrscr();
             errorMessage(e.getMessage());
             System.exit(1);
@@ -195,7 +194,7 @@ public class App {
                         amount = SC.nextLong();
                         account.debitBalance(amount);
                         msg = "\nThe deposit amount has been added to your account SUCCESSFULLY !";
-                    } catch (DatabaseError e) {
+                    } catch (DatabaseException e) {
                         clrscr();
                         errorMessage(e.getMessage());
                         System.exit(1);
@@ -214,7 +213,7 @@ public class App {
                         amount = SC.nextLong();
                         account.creditBalance(amount);
                         msg = "\nYour withdrawal of " + amount + "rs has been SUCCESSFUL !";
-                    } catch (DatabaseError e) {
+                    } catch (DatabaseException e) {
                         clrscr();
                         errorMessage(e.getMessage());
                         System.exit(1);
@@ -270,7 +269,7 @@ public class App {
                 try {
                     account = user.createAccount(money, "saving");
                     return;
-                } catch (DatabaseError e) {
+                } catch (DatabaseException e) {
                     clrscr();
                     errorMessage(e.getMessage());
                     System.exit(1);
@@ -312,7 +311,7 @@ public class App {
         System.out.println("\nCaptcha :");
         println("-----------------");
         System.out.printf("|     %s     |", c.generateCaptcha());
-        println("-----------------");
+        println("\n-----------------");
 
         print("\n\nEnter Captcha : ");
         if (c.validateCaptcha(SC.next())) {
