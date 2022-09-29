@@ -1,3 +1,9 @@
+
+/*
+ * Character.getNumericValue(int ascii);
+ * returns the int value of the specified character.
+ * as fileReader.read() return ascii
+ */
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,10 +16,10 @@ public class Demo {
 
         int j;
         while ((j = fileReader.read()) != -1) {
-            if ((char) j % 2 == 0) {
-                fileEven.write((char) j + "\n");
+            if (Character.getNumericValue(j) % 2 == 0) {
+                fileEven.write(Character.getNumericValue(j) + "\n");
             } else {
-                fileOdd.write((char) j + "\n");
+                fileOdd.write(Character.getNumericValue(j) + "\n");
             }
         }
 
