@@ -4,14 +4,14 @@
 - if you are using a Mobile📱, then click on "View code" above to see the code.
 --- -->
 1. ¯\\\_(ツ)\_/¯
-2. [Odd Even](2/)
-3. [String Operation](3/Main.java)
-4. [Package](4/)
-5. [Multi-threading](5/Main.java)
-6. [Deadlock](6/Deadlock.java)
-7. [Shapes](7/Main.java)
-8. [TCP](8/)
-9. [UDP](9/)
+2. [Odd Even](02/)
+3. [String Operation](03/Main.java)
+4. [Package](04/)
+5. [Multi-threading](05/Main.java)
+6. [Deadlock](06/Deadlock.java)
+7. [Shapes](07/Main.java)
+8. [TCP](08/)
+9. [UDP](09/)
 10. [Voting](10/Main.java)
 11. [Exception Handling](11/Main.java)
 
