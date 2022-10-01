@@ -38,7 +38,8 @@
     - [odd even](FileOperation/OddEven/Demo.java)
     - [BufferedWriter](FileOperation/BufferedWriter/DemoBufferedWriter.java)
     - [BufferedReader](FileOperation/BufferedReader/DemoBufferedReader.java)
-11. [Bank Program](Extra/Bank/)
+11. [Practical](JavaPractical/)
+12. [Bank Program](Extra/Bank/)
 
 
 ---
