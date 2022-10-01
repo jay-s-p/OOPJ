@@ -3,7 +3,7 @@
 ##### 🗒️ Note :-
 - if you are using a Mobile📱, then click on "View code" above to see the code.
 --- -->
-1. ¯\\\_(ツ)\_/¯ soon...
+1. [Author](01/Main.java)
 2. [Odd Even](02/)
 3. [String Operation](03/Main.java)
 4. [Package](04/)
