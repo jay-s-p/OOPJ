@@ -18,7 +18,7 @@ class ClientDemo {
 
         while (true) {
             String data = br.readLine();
-            ps.println(data);
+            ps.println("Server : " + data);
             String data1 = br1.readLine();
             System.out.println(data1);
         }
