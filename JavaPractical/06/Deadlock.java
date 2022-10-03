@@ -27,7 +27,7 @@ class B {
     }
 }
 
-class Deadlock extends Thread {
+public class Deadlock extends Thread {
     A a = new A();
     B b = new B();
 

@@ -1,3 +1,7 @@
+/*
+ * Client Server using Socket and ServerSocket (TCP).
+ */
+
 import java.net.*;
 import java.io.*;
 

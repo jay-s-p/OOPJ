@@ -9,7 +9,7 @@ class MyThread extends Thread {
     }
 }
 
-class Main {
+public class Main {
     public static void main(String s[]) throws Exception {
 
         MyThread t = new MyThread();

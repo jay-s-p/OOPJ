@@ -2,7 +2,7 @@
  * 
  * WAP to do followings using inbuilt methods in String class of Java.
  * 1. find the third character in the string "Hello World"
- * 2. find the the index of character o in the string "JAVA PROGRAMMING"
+ * 2. find the index of character o in the string "JAVA PROGRAMMING"
  * 3. Convert the String "be honest" into Uppercase.
  * 4. Replace the character l with i in the String "Hello"
  * 

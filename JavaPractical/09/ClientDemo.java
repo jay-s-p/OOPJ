@@ -1,3 +1,7 @@
+/*
+ * Client Server using DatagramPacket and DatagramSocket (UDP).
+ */
+
 import java.net.*;
 import java.util.Scanner;
 
