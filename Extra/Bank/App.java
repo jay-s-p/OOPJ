@@ -292,17 +292,15 @@ public class App {
     }
 
     static void errorMessage(String s) {
-        System.out.println("");
-        println("ERROR : " + s);
+        println("\nERROR : " + s);
     }
 
     static void successMessage(String s) {
-        System.out.println("");
-        println(s);
+        println("\n" + s);
     }
 
     static boolean captchaVerification() {
-        System.out.println("\nCaptcha :");
+        println("\nCaptcha :");
         println("-----------------");
         System.out.printf("|     %s     |", c.generateCaptcha());
         println("\n-----------------");
