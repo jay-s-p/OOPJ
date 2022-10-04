@@ -13,11 +13,7 @@
 
 import java.util.Scanner;
 
-import com.javabank.bank.User;
-import com.javabank.bank.Account;
-import com.javabank.bank.Captcha;
-import com.javabank.bank.Database;
-import com.javabank.bank.DatabaseException;
+import com.javabank.bank.*;
 
 public class App {
 
@@ -261,8 +257,6 @@ public class App {
                 print("Enter money more than " + Account.MIN_BALANCE + "rs to create account : ");
                 money = SC.nextLong();
                 if (money <= Account.MIN_BALANCE) {
-                    clrscr();
-                    println(DASHBOARD);
                     err = "Money must be grater than " + Account.MIN_BALANCE + " to create account !";
                     continue;
                 }
