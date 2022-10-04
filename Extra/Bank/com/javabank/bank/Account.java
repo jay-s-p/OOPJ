@@ -30,7 +30,7 @@ public class Account extends Branch implements Serializable {
         if ((this.balance - x) >= this.balance)
             throw new IllegalArgumentException("Invalid value");
         if ((this.balance - x) <= MIN_BALANCE)
-            throw new IllegalArgumentException("Minimal balance must be grater than 3000.");
+            throw new IllegalArgumentException("Minimal balance must be grater than " + MIN_BALANCE);
         this.balance -= x;
         db.updateAccount(this);
     }
