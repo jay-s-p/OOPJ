@@ -9,9 +9,9 @@ public class Account extends Branch implements Serializable {
     private static final Database db = new Database();
     public final static int MIN_BALANCE = 3000;
 
-    public Account(long balance, String type, int accNo) throws DatabaseException, IllegalArgumentException {
+    public Account(long balance, String type, int accNo) throws IllegalArgumentException {
         if (balance < MIN_BALANCE)
-            throw new IllegalArgumentException("Money must be grater than 3000.");
+            throw new IllegalArgumentException("Money must be grater than " + MIN_BALANCE);
         this.balance = balance;
         this.accountType = type;
         this.accountNumber = accNo;
