@@ -17,11 +17,11 @@
     - [static method](Static/Static-Method/SMethod.java)
     - [static class](Static/Static-Class/Outer.java)
     - [static block](Static/Static-Block/Main.java)
-5. final keyword
+5. [final keyword](Final/Main.java)
     - [final variable](Final/Final-Variable/Main.java)
     - [final method](Final/Final-Method/Main.java)
     - [final class](Final/Final-Class/Main.java)
-6. super keyword
+6. [super keyword](Super/Main.java)
     - [super variable](Super/Super-Variable/Main.java)
     - [super method](Super/Super-Method/Main.java)
     - [super constructor](Super/Super-Variable/Main.java)

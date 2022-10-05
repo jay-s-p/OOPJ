@@ -2,8 +2,8 @@ class A {
 	A() {
 		System.out.println("A");
 	}
-	A(String s)
-	{
+
+	A(String s) {
 		System.out.println(s);
 	}
 }
