@@ -12,7 +12,7 @@ class ClientDemo {
         byte data[] = null;
 
         while (true) {
-            String input = new Scanner(System.in).next();
+            String input = new Scanner(System.in).nextLine();
             data = input.getBytes();
             DatagramPacket dp = new DatagramPacket(data, data.length, ip, 1234);
             ds.send(dp);
