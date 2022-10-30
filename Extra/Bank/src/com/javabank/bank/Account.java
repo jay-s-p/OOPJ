@@ -9,15 +9,15 @@ public class Account extends Branch implements Serializable {
     private static final Database db = new Database();
     public final static int MIN_BALANCE = 3000;
 
-    public Account(long balance, String type, int accNo) throws IllegalArgumentException {
+    public Account(long balance, String type, int accNo) throws DatabaseError, IllegalArgumentException {
         if (balance < MIN_BALANCE)
-            throw new IllegalArgumentException("Money must be grater than " + MIN_BALANCE);
+            throw new IllegalArgumentException("Money must be grater than 3000.");
         this.balance = balance;
         this.accountType = type;
         this.accountNumber = accNo;
     }
 
-    public void debitBalance(long x) throws DatabaseException, IllegalArgumentException {
+    public void debitBalance(long x) throws DatabaseError, IllegalArgumentException {
         if ((Long.MAX_VALUE - this.balance) < x)
             throw new IllegalArgumentException("Max value reached.");
         if ((this.balance + x) <= this.balance)
@@ -26,11 +26,11 @@ public class Account extends Branch implements Serializable {
         db.updateAccount(this);
     }
 
-    public void creditBalance(long x) throws DatabaseException, IllegalArgumentException {
+    public void creditBalance(long x) throws DatabaseError, IllegalArgumentException {
         if ((this.balance - x) >= this.balance)
             throw new IllegalArgumentException("Invalid value");
         if ((this.balance - x) <= MIN_BALANCE)
-            throw new IllegalArgumentException("Minimal balance must be grater than " + MIN_BALANCE);
+            throw new IllegalArgumentException("Minimal balance must be grater than 3000.");
         this.balance -= x;
         db.updateAccount(this);
     }

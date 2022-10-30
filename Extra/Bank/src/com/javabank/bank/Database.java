@@ -1,3 +1,9 @@
+/*
+ * File Operation Reference from :-
+ * https://stackoverflow.com/questions/16111496/java-how-can-i-write-my-arraylist-to-a-file-and-read-load-that-file-to-the#:~:text=6-,Answers
+ * 
+ */
+
 package com.javabank.bank;
 
 import java.io.FileInputStream;
@@ -6,17 +12,20 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
+@SuppressWarnings("unchecked")
 public class Database {
-
+    /* ArrayList for all the user and accounts */
     private static ArrayList<User> users = new ArrayList<>();
     private static ArrayList<Account> accounts = new ArrayList<>();
 
+    /* Database Constructor in which we are reading the data from files(accounts.ser & users.ser) */
     public Database() {
         try {
+            /* Reading data from users.ser file */
             ObjectInputStream in = new ObjectInputStream(new FileInputStream("users.ser"));
             users = ((ArrayList<User>) in.readObject());
             in.close();
-
+            /* Reading data from accounts.ser file */
             in = new ObjectInputStream(new FileInputStream("accounts.ser"));
             accounts = ((ArrayList<Account>) in.readObject());
             in.close();
@@ -24,6 +33,7 @@ public class Database {
         }
     }
 
+    /* checking for username already taken or not */
     public Boolean usernameAvailable(String s) {
         for (User u : users) {
             if (u.checkUsername(s))
@@ -32,7 +42,11 @@ public class Database {
         return true;
     }
 
-    protected void updateAccount(Account acc) throws DatabaseException {
+    /* 
+     * update new account details to accounts ArrayList
+     * and write it to files...
+     */
+    protected void updateAccount(Account acc) throws DatabaseError {
         int acc_no = acc.getAccountNumber();
 
         for (int i = 0; i < accounts.size(); i++) {
@@ -46,7 +60,7 @@ public class Database {
             out.writeObject(accounts);
             out.close();
         } catch (Exception e) {
-            throw new DatabaseException("Failed to update Account");
+            throw new DatabaseError("Failed to update Account");
         }
     }
 
@@ -68,7 +82,7 @@ public class Database {
         return null;
     }
 
-    public void addData(User user, Account acc) throws DatabaseException {
+    public void addData(User user, Account acc) throws DatabaseError {
         users.add(user);
         if (acc != null)
             accounts.add(acc);
@@ -83,7 +97,7 @@ public class Database {
             out.writeObject(accounts);
             out.close();
         } catch (Exception e) {
-            throw new DatabaseException("Failed to update Account ");
+            throw new DatabaseError("Failed to update Account ");
         }
     }
 }

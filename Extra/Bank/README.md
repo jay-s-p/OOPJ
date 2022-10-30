@@ -1,13 +1,13 @@
  # 😎 Bank Program...
 
-1. [App.java](App.java)
-2. [Captcha.java](com/javabank/bank/Captcha.java)
-3. [Bank.java](com/javabank/bank/Bank.java)
-4. [Branch.java](com/javabank/bank/Branch.java)
-5. [Account.java](com/javabank/bank/Account.java)
-6. [User.java](com/javabank/bank/User.java)
-7. [Database.java](com/javabank/bank/Database.java)
-8. [DatabaseException.java](com/javabank/bank/DatabaseException.java)
+1. [App.java](src/App.java)
+2. [Captcha.java](src/com/javabank/bank/Captcha.java)
+3. [Bank.java](src/com/javabank/bank/Bank.java)
+4. [Branch.java](src/com/javabank/bank/Branch.java)
+5. [Account.java](src/com/javabank/bank/Account.java)
+6. [User.java](src/com/javabank/bank/User.java)
+7. [Database.java](src/com/javabank/bank/Database.java)
+8. [DatabaseException.java](src/com/javabank/bank/DatabaseException.java)
 
 #
 
