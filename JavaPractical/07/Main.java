@@ -33,6 +33,5 @@ public class Main {
         // Circle
         s = new Circle();
         s.draw();
-
     }
 }
