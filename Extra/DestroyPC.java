@@ -1,4 +1,4 @@
-public class DestoryPC {
+public class DestroyPC {
     public static void main(String[] args) {
         while (true) {
             new Thread() {
