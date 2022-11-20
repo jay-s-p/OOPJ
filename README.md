@@ -10,6 +10,7 @@
 ### 🧑‍💻Programs ...
 1. [Hello World](HelloWorld.java)
 1. [Practical programs](JavaPractical/)
+1. [CIA-2](CIA-2/)
 1. [for-each loop](ForEachLoop/OneDimensionalArray.java)
 1. [command-line argument](ForEachLoop/CommandLineArgs/Main.java)
 1. [Scanner example](Scanner/Main.java)
