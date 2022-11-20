@@ -4,7 +4,7 @@
 
 [13a - MathPack](13a/)<br>
 
-[15b - Coming soon...]
+[15b - Copy data](15b/Main.java)<br>
 
 [16b - Triangle calcArea](16b/Main.java)<br>
 
