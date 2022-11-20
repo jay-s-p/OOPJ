@@ -20,8 +20,8 @@ class Main {
 
         FileWriter file2 = new FileWriter("file-2.txt");
         BufferedWriter bw = new BufferedWriter(file2);
-
         bw.write(data);
         bw.close();
+
     }
 }
