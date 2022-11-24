@@ -23,7 +23,7 @@ public class ExceptionDemo {
         try {
             demo.compute(0);
             demo.compute(7);
-            demo.compute(11);
+            demo.compute(11); // MyException: Value must be less than 10.
         } catch (MyException e) {
             System.out.println(e);
         }
