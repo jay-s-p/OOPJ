@@ -9,11 +9,11 @@
        -----------------------------------------                  ------------------
        |                                       |                  |                |
     Numeric                               Non-numeric           String          Array
-       |                                       |
+       |                                       |                
        ------------------                 -------------
        |                 |                |           |
     Integral      Floating-point         char      boolean
-       |                 |
+       |                 |             (2bytes)    (1byte)
        |            -----------
        |            |         |
        |          float     double
